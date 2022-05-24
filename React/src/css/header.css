@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+:root {
+    --main-bg-color: #0d0d0c;
+    --header-text-color:#f04a13;
+    --splitter-bg-color: #f5f0f0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    height: 6.5vh;
+}
+
+.per {
+    padding-left: 2.5%;
+    flex: 0 0 72.5%;
+}
+
+.header-text {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    font-size: 1.5em;
+    color: var(--header-text-color);
+}
+
+.navbar {
+    flex: 0 0 27.5%;
+}
+
+.splitter-header {
+    background-color: var(--splitter-bg-color) !important; 
+}
+
+.navbar-component {
+    color: white;
+    font-weight: 700;
+    width: 4vw;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+a:visited, a:link, a {
+    text-decoration: none;
+    color: var(--splitter-bg-color);
+    font-weight: 500;
+    font-size: 1.05rem;
+}

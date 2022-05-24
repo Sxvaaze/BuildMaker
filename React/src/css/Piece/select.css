@@ -1,0 +1,93 @@
+:root {
+    --main-bg: #f5f0f0;
+    --comp-bg:	#110F0F;
+    --text-color: #db7210;
+    --title-color:   #f76820;
+}
+
+.select-comp {
+    background-color: var(--comp-bg);
+    height: 12.5vh;
+    text-align: center;
+    align-items: center;
+}
+
+.select-title {
+    margin-top: 2.2%;
+    font-weight: 1.2rem;
+    color: var(--title-color);
+    font-weight: 700;
+}
+
+.select-content {
+    height: 78.25vh;
+    background-color: var(--main-bg);
+}
+
+.select-pieces {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: column wrap;
+}
+
+.select-component {
+    flex: 0 0 100%;
+    margin-left: 7%;
+    margin-top: 1%;
+}
+
+.select-component > * {
+    margin-left: 3%;
+}
+
+.composition {
+    margin-top: 1%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.name {
+    float: left;
+}
+
+.search-form {
+    background-color: var(--main-bg);
+}
+
+* {
+    outline: none;
+  }
+
+  
+  body {
+    margin: 0;
+  }
+  
+  input,
+  button {
+    color: #fff;
+    font-family: Nunito;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  form {
+    height: 9vh;
+    overflow: hidden;
+  }
+  
+  input[type="text"] {
+    width: 99%;
+    height: 8vh;
+    font-size: 1.9rem;
+    color: var(--title-color);
+    padding-left: 0.5%;
+  }
+
+  input[type="text"]:hover { border: 5px solid var(--comp-bg); }
+  input[type="text"]::placeholder { color: #090909; }

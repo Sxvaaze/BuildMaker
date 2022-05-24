@@ -1,0 +1,19 @@
+:root {
+    --main-bg2: #0e1111;
+    --creator-names: #f76820;
+}
+
+.footer {
+    background-color: var(--main-bg2);
+    text-align: center;
+}
+
+.footer-txt {
+    color:white;
+    font-size: 1.5em;
+}
+
+.creators-txt {
+    color: var(--creator-names);
+    font-size: 1.5em;
+}

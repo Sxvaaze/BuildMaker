@@ -1,0 +1,110 @@
+:root {
+    --main-bg:	#f5f0f0;
+    --text-color: #db7210;
+    --title-color:   #f76820;
+    --btn: #18c971;
+}
+
+.build-content {
+    background-color: var(--main-bg);
+    color: var(--title-color);
+    font-weight: 700;
+    height: 170vh;
+}
+
+.build-selector {
+    display: grid;
+    column-gap: 2vw;
+    row-gap: 2vh;
+    margin-left: 7.5%;
+    grid-template-rows: repeat(6, 15vh);
+    grid-template-columns: repeat(2, 42vw);
+}
+
+.remove {
+    background-color: red; 
+    width: 12vw;
+    height: 7vh;
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.add {
+    background-color: var(--btn) !important;
+    float: right;
+    width: 8.5vw;
+    margin-right: 7.05%;
+}
+
+.add > a {
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.build-submit {
+    background-color: var(--main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.build-submit-btn {
+    color: white;
+    background-color: var(--btn);
+    width: 40vw;
+    height: 8vh;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.build-selected {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row nowrap;
+    font-size: 1.2rem;
+    margin-left: -80%;
+    margin-top: 2%;
+}
+
+.build-selected > .selected-image {
+    flex: 0 0 4%;
+}
+.build-selected > .selected-name {
+    flex: 0 0 30%;
+}
+
+.build-selected > * {
+    margin-left: 1%;
+    flex: 0 0 11%;
+}
+
+.add-btn {
+    margin-top: 1%;
+    background-color: var(--btn); 
+    border: none;
+    color: white;
+    padding: 11.25px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    height: 7vh;
+    margin-left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+   .build-selector {
+       grid-template-columns: repeat(1, 80vw) !important;
+   }
+
+   .build-content {
+        height: 180vh;
+    }
+
+    .build-component {
+        width: 100vw;
+        align-items: center;
+    }
+}

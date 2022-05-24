@@ -1,0 +1,66 @@
+:root {
+    --main-bg:	#f5f0f0;
+    --text-color: #db7210;
+    --title-color:   #f76820;
+}
+
+.final-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg);
+}
+
+.final-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-top: 12px solid var(--title-color);
+    border-right: 12px solid var(--title-color);
+    border-left: 12px solid var(--title-color);
+    padding: 3% 3% 3% 3%;
+}
+
+.final-component:last-child { border-bottom: 12px solid var(--title-color); }
+
+h1 { color: var(--title-color) }
+
+.final-txt { 
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.final-component > * {
+    margin-top: 0.5%;
+}
+
+.final-container {
+    background-color: var(--main-bg);
+    min-height: 23.3vh;
+
+}
+
+.submit-ctn { 
+    margin-top: 8%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.submit {
+    background-color: var(--title-color);
+    width: 28vw;
+    height: 8vh;
+}
+
+.submit > a {
+    font-weight: 800;
+    color: white;
+    font-size: 1.5rem;
+}

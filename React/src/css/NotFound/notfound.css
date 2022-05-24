@@ -1,0 +1,54 @@
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.error-txt {
+    color: #d10415;
+    font-size: 3.5rem;
+    margin-bottom: 2.5%;
+}
+
+.error-btn {
+    background-color: #d10415;
+    border-radius: 3%;
+    border: none;
+    height: 5.5vh;
+    width: 28vw;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 968px) {
+    .error-txt {
+        font-size: 3rem;
+    }
+    .error-btn {
+        width: 34vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .error-txt {
+        font-size: 2.5rem;
+    }
+    .error-btn {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .error-txt {
+        font-size: 2rem;
+    }
+    .error-btn {
+        width: 48vw;
+        font-size: 1.2rem;
+    }
+}

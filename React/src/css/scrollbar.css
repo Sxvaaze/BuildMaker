@@ -1,0 +1,52 @@
+/* 
+
+    scrollbar.css, responsible for the styling of the browser scrollbar.
+
+*/
+
+:root {
+    --bar-bg: #d1d1cb;
+    --bar-color: #f76820;
+    --bar-hover: #e6560e;
+}
+
+
+body::-webkit-scrollbar {
+    width: 0.6vw;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 50px;
+    background: var(--bar-bg);
+}
+  
+body::-webkit-scrollbar-track:hover {
+    background: var(--bar-bg);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--bar-color); 
+    border-radius: 10px;
+}
+  
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--bar-hover); 
+}
+
+@media screen and (max-width: 1024px) {
+    body::-webkit-scrollbar {
+        width: 0.9vw;
+    }
+}
+
+@media screen and (max-width: 896px) {
+    body::-webkit-scrollbar {
+        width: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body::-webkit-scrollbar {
+        width: 1.5vw;
+    }
+}

@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f0f0;
+}
+
+.components-container {
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+.components {
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 3%;
+}
+
+.components > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.components > .comp-icon {
+    display: block;
+    margin: 0 auto;
+  
+}
+
+span {
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #151515;
+}

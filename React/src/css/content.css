@@ -1,0 +1,110 @@
+:root {
+    --main-bg:	#f5f0f0;
+    --text-color: #db7210;
+    --title-color:   #f76820;
+}
+
+.container {
+    background-color: var(--main-bg);
+    height: 65vh;
+    padding-top: 1%;
+}
+
+.container-title {
+    text-align: center;
+    color: var(--title-color);
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.example-text {
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 20;
+    font-size: 2.2em;
+    font-family: Times;
+    padding-top: 2%;
+}
+
+
+.example-builds {
+    display: flex;
+    flex-direction: row !important;
+    flex-flow: row wrap;
+}
+
+.build-component {
+    flex: 0 0 25%;
+    margin-top: 3%;
+}
+
+.example-builds > .build-component:first-of-type { margin-left: 10%; }
+
+.build-component > img {
+    height: 27.5vh;
+    width: 27.5vw;
+}
+
+.container-build {
+    display: flex;
+    flex: 0 0 50%;
+    flex-flow: row wrap;
+    flex-direction: row;
+    background-color: var(--main-bg);
+}
+
+.build-btn {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 15px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 8vh;
+    width: 30vw;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    margin-left: 35%;
+}
+
+.build-btn:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.alink {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 1.5rem;
+    color: red;
+}
+
+.build-btn:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.build-btn:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
